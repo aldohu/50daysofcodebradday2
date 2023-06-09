@@ -1,0 +1,72 @@
+:root {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+}
+
+.line {
+	width: 50px;
+	height: 2px;
+	background: gainsboro;
+	transition: background-color 0.5s; /* Add transition property for background-color */
+}
+
+.line.active-line {
+	background: aqua; /* Apply aqua color to active lines */
+}
+.circle {
+	border: 2px solid gainsboro;
+	padding: 5px;
+	height: 30px;
+	width: 30px;
+	border-radius: 60%;
+	text-align: center;
+	color: aqua;
+}
+
+.circle.active {
+	border-color: aqua;
+	transition-delay: 0.5s;
+}
+
+#main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.w3-button {
+	margin: 20px;
+	width: 120px;
+	padding: 5px 20px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 20px;
+	cursor: pointer;
+	transition: 2s ease-in;
+}
+
+.w3-button:hover {
+	transform: scale(1.1);
+}
+
+.w3-blue {
+	background-color: aqua;
+	color: white;
+	border-color: white;
+}
+
+.w3-gray {
+	background-color: white;
+	color: aqua;
+	border-color: aqua;
+}
